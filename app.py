@@ -31,7 +31,7 @@ def Post():
     with open("objs.json","w") as file:
         json.dump(objs, file, indent=4)
 
-    return objs,201
+    return {"status","correcto"},201
 
 if __name__ == '__main__':
     app.run(debug=True)
